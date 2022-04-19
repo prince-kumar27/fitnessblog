@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&display=swap');
+:root{
+    --main-bg-color: rgb(193, 193, 225);
+    --font1: 'Fredoka One', cursive;
+}
+
+
+.max-width-1{
+    max-width: 80vwvw;
+    
+}
+.max-width-2{
+    max-width: 60vw;
+}
+.m-auto{
+    margin:auto;
+}
+.btn{
+    padding: 1px 1px;
+    padding-left: 12px;
+   
+    margin: 0 3px;
+ 
+}
+.form-input{
+
+    padding: 1px 0px;
+    padding-left: 12px;
+    border: 2px solid;
+    margin: 0 3px;
+    border-radius: 24px;
+}
