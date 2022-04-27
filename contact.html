@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>Document</title>
+    <style>
+        .fa:hover {
+            opacity: 0.9;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-pinterest {
+            background: #cb2027;
+            color: white;
+        }
+
+        .fa-reddit {
+            background: #ff5700;
+            color: white;
+        }
+
+        .fa-facebook {
+            background: #033b55;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #cc3e13;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #1a68d5;
+            color: white;
+        }
+
+
+        .fa {
+            padding: 10px;
+            font-size: 40px;
+            width: 50px;
+            text-decoration: none;
+            margin: 5px 50px;
+        }
+
+
+        h1 {
+            color: green;
+        }
+
+        .formdesign {}
+
+        .formdesign input {
+            width="45%";
+            border: 5px;
+            margin: 12px;
+        }
+
+        </style>
+<script>
+    function validate(){
+    var username = document.getElementById("uname");
+    var address = document.getElementById("add");
+    var password = document.getElementById("pass");
+    var country = document.getElementById("cou");
+    
+    var username = document.getElementById("uname");
+    var password = document.getElementById("pass");
+
+    if(username.value.trim()=="" ||password.value.trim()==""||address.value.trim()==""||email.value.trim()==""||sex.value.trim()==""||country.value.trim()==""||language.value.trim()=="")
+    {
+        alert("NO BLANK VALUE ALLOWED 💻👈        THANK YOU");
+        return false;
+    }
+    else{
+           return true;
+    }
+}
+</script>
+</head>
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <span>FITNESS BLOG</span>
+          <ul>
+              <li><a href="/">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="/contact.html">CONTACT</a></li>
+
+          </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+            <input class="form-input" type="text" name="query" placeholder="SEARCH BLOG">
+            <button class="btn">search</button>
+        </form>
+        </div>
+       
+    </nav>
+
+
+    <h1>Registration Form</h1>
+    <P>FEEL FREE TO CONTACT US:😊</P>
+
+ <form action="/message.html" onsubmit ="return validate()"class="form-inputs">
+        <label for="username">Name:</label>
+<input id="uname"type="text"name="username"size="50"placeholder="username"/><br>
+<label for="address">Address:</label>
+<input id="add"type="text"name="address"size="50"/><br>
+<label for="country">Country:</label>
+<select id="cou"name="country">
+<option selected=""value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option></select><br>
+<label for="email">Email:</label>
+<input class="formdesign"type="text"name="email"size="50"placeholder="enter your email id "/><br>
+<label for="passid">Password: </label>
+<input id="pass"type="password"name="passid"size="12"placeholder="enter password"/><br>
+<label id="gender">Sex:</label>
+<input type="radio"name="msex"value="Male"/><span>Male</span>
+<input type="radio"name="fsex"value="Female"/><span>Female</span><br>
+
+<label>Language:</label>
+<input type="checkbox"name="en"value="en"checked />
+<span>English</span>
+<input type="checkbox"name="nonen"value="noen"/>
+<span>Non English</span><br>
+<label for="desc">About:</label>
+<textarea class="formdesign"name="desc"id="desc"size="1000"placeholder=""></textarea><br>
+<input class="but"  type="submit" name="submit" value="Submit"/>
+<input class="but"type="reset"name="reset"value="reset"/>
+ </form>
+
+
+
+
+
+
+
+
+
+
+
+
+  <center>
+        <h1>FITNESS BLOG</h1>
+        <h3>FOLLOW US ON SOCIAL MEDIA 👇</h3>
+    
+        <!-- Add font awesome icons -->
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+        <a href="#" class="fa fa-reddit"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-twitter"></a>
+    </center>     
+<div class="footer max-width-2 m-auto">
+<p>COPYRIGHT &copy; FITNESSBLOG.COM</p>
+</div>
+
+</body>
+</html>
